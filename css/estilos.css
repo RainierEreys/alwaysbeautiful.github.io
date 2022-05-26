@@ -19,6 +19,7 @@ header{
 	background: lightgray;
 	box-shadow: 0 8px 25px -22px black;
 	z-index: 2;
+	min-width: 250px;
 }
 
 .header-content{
@@ -26,6 +27,7 @@ header{
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	min-width: 250px;
 }
 
 .logo img{
@@ -122,11 +124,19 @@ fieldset{
 }
 
 #principal .content1 #contact{
-	padding: 20px;
-	width: 35%;
-	margin-left: 40%;
+
+	padding: 25px;
+	width: 50%;
+	margin-left: 15%;
 	border-radius: 10px;
-	position: relative;
+	flex: 1;
+	max-width: 50%;
+	min-width: 20%;
+	/*padding: 20px;
+	width: 35%;
+	margin-left: auto;
+	border-radius: 10px;*/
+	
 }
 
 fieldset legend{
@@ -136,8 +146,30 @@ fieldset legend{
 	font-weight: bold;
 	border: solid 1px #b5d5f8;
 }
-#basic-info{
+#basic_info{
+
+	padding: 25px;
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 10px;
+	flex: 1;
+	min-width: 20%;
+
+	/*
 	padding: 20px;
+	max-margin-left: 15%;
+	width: 70%;
+	margin-left: auto;
+	border-radius: 10px;
+	*/
+}
+
+#basic_info legend{
+	background: ghostwhite;
+	border-radius: 15px;
+	padding: 5px;
+	font-weight: bold;
+	border: solid 1px #b5d5f8;
 }
 
 #basic_info ul{
