@@ -1,58 +1,190 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<title>Acercade|Rainier Peña</title>
-	<link rel="stylesheet" href="css/estilo_inicio.css">
+	<title>Curriculum|Rainier Peña</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+	<div>
+		<nav class="navbar navbar-expand-lg bg-secondary" id="navbar">
+			<div class="container-fluid">
+				<a class="navbar-brand ps-3" href="index.html">
+					<img class="img-fluid h-75 w-50" src="images/logo_personal.png" alt="logo" id="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item px-4">
+							<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link active" href="inicio.html">Curriculum</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link" href="projects.html">Proyectos</a>
+						</li>
 
-<header>
-
-	<div class="header-content">
-
-		<div class="logo">
-			<img src="images/logo_personal.png">
-		</div>
-
-		<div class="menu">
-
-			<nav>
-				<ul>
-					<li class="menu-selected"><a class="text-menu-selected" href="inicio.html">Inicio</a></li>
-					<li><a href="index.html">Curriculum</a></li>
-					<li ><a href="projects.html">Proyectos</a></li>
-				</ul>
-			</nav>
-		</div>
-
-	</div>
-</header>
-
-<h1  class="tittle">Acerca de mi</h1>
-
-<div class="container">
-
-	<div class="card" >
-	  <img class="card-img-top" src="images/personal.jpg" alt="Card image cap">
-	  <h4>Rainier Peña</h4>
-	  </br>
-	  <p>Soy un jóven Venezolano, nacido en Caracas, de 21 años de edad. Estudiante de la carrera Ingeniería Informática en La Universidad Marítima del Caribe. Me gustan los nuevos retos, ya que esa es la mejor forma de aprendizaje. Puede ojear mis habilidades en el <a href="index.html">currículum</a>, de igual manera puede echar un vistazo a mis <a href="projects.html">proyectos</a>.</p>
-	  </br>
-	  
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
 
-</div>
+	<p class="text-center" id="pdf">
+		Si desea ver el Currículum en PDF, haga clic &nbsp;<a href="curriculum_pdf.html">aqui</a>
+	</p>
 
-<div class="content-footer">
-	<footer>
-		<div>
-			<p align="center"><a>Rainier Erey Peña Bolivar | 2022</a></p>
+	<div class="mx-auto px-5 py-5 w-75 border border-1" id="principal">
+
+		<div class="row justify-content-center">
+
+			<div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+				<img src="images/personal.jpg" id="personal" class="img-fluid rounded mx-auto d-block">
+			</div>
+			<div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+				<br>
+				<h1 class="text-center"><b>Rainier Erey Peña Bolivar</b></h1>
+				<h3 class="text-center text-muted pb-3">Maquetador Web</h3>
+
+				<section class="row w-75 mx-auto pb-5">
+					<form class="border border-3 rounded-3">
+						<legend class="text-center text-primary py-2">
+							Información de contacto
+						</legend>
+						<div class="form-group row justify-content-start pt-2 px-3">
+							<p class="text-left"><b>Nº de Teléfono: &nbsp;</b> (+58)414-319-61-44</p>
+						</div>
+						<div class="form-group row justify-content-start pt-2 px-3">
+							<p class="text-left"><b>Email: &nbsp;</b> Rainierereys242@gmail.com</p>
+						</div>
+					</form>
+				</section>
+			</div>
+
 		</div>
+
+		<div class="row mx-auto w-75 border border-black rounded-3">
+
+			<form class="border rounded-3">
+				<legend class="text-center text-primary py-2">
+					Información Básica
+				</legend>
+				<div class="form-group row justify-content-center pt-2">
+					<p class="text-left"><b>Nacionalidad: &nbsp;</b> Venezolano</p>
+				</div>
+				<div class="form-group row justify-content-center pt-2">
+					<p class="text-left"><b>Fecha de Nacimiento: &nbsp;</b> 19/08/2000</p>
+				</div>
+				<div class="form-group row justify-content-start pt-2">
+					<p class="text-left"><b>Lenguajes: &nbsp;</b> Español(Nativo)/Inglés(Básico)</p>
+				</div>
+				<div class="form-group row justify-content-start pt-2">
+					<p class="text-left"><b>Preparación académica: &nbsp;</b>Cursando Ingeniería Informática(8º
+						Semestre)-Universidad Marítima del Caribe</p>
+				</div>
+			</form>
+		</div>
+		<div class="row mx-auto w-75 border border-black rounded-3 my-5">
+
+			<form class="border border-1 rounded-3">
+				<legend class="text-center text-primary py-2">
+					Habilidades
+				</legend>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>1. </b>Programación en lenguajes como PHP y Java, enfocado a la programación
+						de eventos.</p>
+				</div>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>2. </b>Desarrollo de páginas web utilizando HTML, CSS y JavaScript.</p>
+				</div>
+				<div class="form-group row justify-content-start px-3">
+					<p class="text-left"><b>3. </b>Desarrollo de aplicaciones web, utilizando el framework CodeIgniter 4
+						en conjunto con MySQL para la
+						base de datos.</p>
+				</div>
+				<div class="form-group row justify-content-start px-3">
+					<p class="text-left"><b>4. </b>Desarrollo de aplicación web, utilizando el framework Django en
+						conjunto con PostgreSQL para la base
+						de datos.</p>
+				</div>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>5. </b>Desarrollo y empaquetado de interfaces gráficas en Java.</p>
+				</div>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>6. </b>Manejo básico de base de datos utilizando MySQL y PostgreSQL.</p>
+				</div>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>7. </b>Instalación y manejo del sistema operativo Microsoft Windows</p>
+				</div>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>8. </b>Manejo básico del programa Adobe Photoshop.</p>
+				</div>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>9. </b>Manejo basico del Firewall Pfsense</p>
+				</div>
+				<div class="form-group row justify-content-center px-3">
+					<p class="text-left"><b>10. </b>Manejo básico del conjunto de herramientas pertenecientes al
+						Miscrosoft Office.</p>
+				</div>
+			</form>
+		</div>
+
+		<div class="row mx-auto w-75 border border-black rounded-3 my-5">
+
+			<form class="border border-1 rounded-3">
+				<legend class="text-center text-primary py-2">
+					Experiencia
+				</legend>
+				<div class="form-group row justify-content-center py-3 px-3">
+					<p class="text-end text-success">Junio 2021-Actualidad</p>
+					<p class="text-left my-0"><b>1. Desarrollador Web. Freelance </b></p>
+					<p class="text-left">Desarrollo de sitios web, utilizando Html, Css y JavaScript.</p>
+				</div>
+				<div class="form-group row justify-content-center py-3 px-3">
+					<p class="text-end text-success">Enero 2022-Marzo 2022</p>
+					<p class="text-left my-0"><b>2. Desarrollador Web. Proyecto para la Universidad Marítima del
+							Caribe.</b></p>
+					<p class="text-left">Desarrollo de una aplicación web destinada a gestionar textos físicos y
+						digitales de la biblioteca
+						de la Universidad Marítima del Caribe</p>
+				</div>
+				<div class="form-group row justify-content-start py-3 px-3">
+					<p class="text-end text-success">Junio 2021-Actualidad</p>
+					<p class="text-left my-0"><b>3. Desarrollador Web. Proyecto para la Universidad Marítima del Caribe.
+						</b></p>
+					<p class="text-left">Desarrollo de una aplicación web destinada a gestionar los registros de horas
+						de prestación de
+						servicio social y pasantías por parte de los estudiantes próximos a egresar de la universidad.
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<footer class="text-center pt-3 text-lg-start">
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			
+			<p>© 2022 Copyright | Rainier Erey Peña Bolivar</p>
+		</div>
+		<!-- Copyright -->
 	</footer>
-</div>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>

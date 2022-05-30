@@ -114,7 +114,7 @@ header{
 
 .container .card{
 	width: 400px;
-	height: 600px;
+	height: 100%;
 	background-color: lightgray;
 	border-radius: 10px;
 	box-shadow: 0 2px 2px black;
@@ -136,6 +136,8 @@ header{
 	width: 400px;
 	height: 330px;
 	padding: 20px;
+	display: flex;
+	min-width: 250px;
 }
 
 

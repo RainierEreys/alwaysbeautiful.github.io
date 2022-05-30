@@ -1,123 +1,95 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<title>Curriculum|Rainier Peña</title>
+	<title>Acercade|Rainier Peña</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
-<header>
-
-	<div class="header-content">
-
-		<div class="logo">
-			<img src="images/logo_personal.png">
-		</div>
-
-		<div class="menu">
-
-			<nav>
-				<ul>
-					<li><a href="inicio.html">Inicio</a></li>
-					<li class="menu-selected"><a class="text-menu-selected" href="index.html">Curriculum</a></li>
-					<li><a  href="projects.html">Proyectos</a></li>
-				</ul>
-			</nav>
-		</div>
-
-	</div>
-</header>
-
-<p id="pdf">Si desea ver el Currículum en PDF, haga clic &nbsp;<a href="curriculum_pdf.html"> aqui</a></p>
-</br>
-<div id="principal">
-	
-	<img src="images/personal.jpg" id="personal" width="180" height="200" align="left">
-	
-	<div class="content1">
-		<br>
-		<h1 align="center">Rainier Erey Peña Bolivar</h1>
-		<h3 align="center">Maquetador Web</h3>
-		</br>
-		<fieldset id="contact">
-			<legend>Información de contacto</legend>
-		
-			<p align="center"><b>Nº de Teléfono: &nbsp; </b> (+58) 414-319-61-44</p>
-			</br>
-			<p align="center"><b>Email: &nbsp; </b> Rainierereys242@gmail.com</p>
-		</fieldset>
-		</br>
-		</br>
-		
-	</div>
-
-
-
-
-	<fieldset id="basic_info">
-		<legend>Información Básica</legend>
-		<ul>
-			<li><b>Nacionalidad: &nbsp; </b> Venezolano</li>
-			</br>
-			<li><b>Fecha de nacimiento: &nbsp; </b> 19/08/2000</li>
-			</br>
-			<li><b>Lenguajes: &nbsp; </b> Español(Nativo)/Inglés(Básico)</li>
-			</br>
-			<li><b>Preparación académica: &nbsp; </b>Cursando Ingeniería Informática(8º Semestre)-Universidad Marítima del Caribe</li>
-		</ul>
-	</fieldset>
-	</br>
-	</br>	
-	<fieldset>
-		<legend>Habilidades</legend>
-		<ul>
-			<li>Programación en lenguajes como PHP y Java, enfocado a la programación de eventos.</li>
-			<li>Desarrollo de páginas web utilizando HTML, CSS y JavaScript.</li>
-			<li>Desarrollo de aplicaciones web, utilizando el framework CodeIgniter 4 en conjunto con MySQL para la base de datos.</li>
-			<li>Desarrollo de aplicación web, utilizando el framework Django en conjunto con PostgreSQL para la base de datos.</li>
-			<li>Desarrollo y empaquetado de interfaces gráficas en Java.</li>
-			<li>Manejo básico de base de datos utilizando MySQL y PostgreSQL.</li>
-			<li>Instalación y manejo del sistema operativo Microsoft Windows</li>
-			<li>Manejo básico del programa Adobe Photoshop.</li>
-			<li>Manejo basico del Firewall Pfsense</li>
-			<li>Manejo básico del conjunto de herramientas pertenecientes al Miscrosoft Office.</li>
-		</ul>
-	</fieldset>	
-	</br>
-	</br>	
-	<fieldset>
-		<legend>Experiencia</legend>
-		<ul>
-			<p align="right">Junio 2021-Actualidad</p>
-			<li><b>Desarrolador Web. Freelance.</b></li>
-			<p>Desarrollo de sitios web, utilizando Html, Css y JavaScript.</p>
-			</br>
-			<p align="right">Enero 2022-Marzo 2022</p>
-			<li><b>Desarrollador Web. Proyecto para la Universidad Marítima del Caribe.</b></li>
-			<p>Desarrollo de una aplicación web destinada a gestionar textos físicos y digitales de la biblioteca de la Universidad Marítima del Caribe</p>
-			</br>
-			<p align="right">Abril 2022-Actualidad</p>
-			<li><b>Desarrollador Web. Proyecto para la Universidad Marítima del Caribe.</b></li>
-			<p>Desarrollo de una aplicación web destinada a gestionar los registros de horas de prestación de servicio social y pasantías por parte de los estudiantes próximos a egresar de la universidad.</p>
-			
-		</ul>
-	</fieldset>	
-	</br>
-	</br>	
-	
-</div>
-</br>
-	
-<footer>
 	<div>
-		<p align="center"><a>Rainier Erey Peña Bolivar | 2022</a></p>
+		<nav class="navbar navbar-expand-lg bg-secondary" id="navbar">
+			<div class="container-fluid">
+				<a class="navbar-brand ps-3" href="index.html">
+					<img class="img-fluid h-75 w-50" src="images/logo_personal.png" alt="logo" id="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item px-4">
+							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link " href="inicio.html">Curriculum</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link" href="projects.html">Proyectos</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
-</footer>
-<!--<iframe src="" frameborder='0'>
-	
-</iframe>-->
+
+	<h1 class="tittle fw-bold py-3">Acerca de mi</h1>
+
+	<div class="row g-0 justify-content-center py-4 border-rounded-3">
+		<div class="card shadow-lg" style="width: 25rem;">
+			<img src="images/personal.jpg" class="img-fluid" alt="personal1">
+			<div class="card-body">
+				<h5 class="text-center fw-bold" id="tituloh4"><b>Rainier Peña</b></h5>
+				<p class="card-text text-center">Soy un jóven Venezolano, nacido en Caracas, de 21 años de edad. Estudiante de la
+					carrera Ingeniería
+					Informática en La Universidad Marítima del Caribe. Me gustan los nuevos retos, ya que esa es la
+					mejor
+					forma de aprendizaje. Puede ojear mis habilidades en el <a href="index.html">currículum</a>, de
+					igual
+					manera puede echar un vistazo a mis <a href="projects.html">proyectos</a>.</p>
+			</div>
+		</div>
+	</div>
+
+	<!--<div class="container">
+
+		<div class="card">
+			<img class="card-img-top" src="images/personal.jpg" alt="Card image cap">
+			<h4>Rainier Peña</h4>
+			</br>
+			<p>Soy un jóven Venezolano, nacido en Caracas, de 21 años de edad. Estudiante de la carrera Ingeniería
+				Informática en La Universidad Marítima del Caribe. Me gustan los nuevos retos, ya que esa es la mejor
+				forma de aprendizaje. Puede ojear mis habilidades en el <a href="index.html">currículum</a>, de igual
+				manera puede echar un vistazo a mis <a href="projects.html">proyectos</a>.</p>
+			</br>
+
+		</div>
+
+	</div>-->
+
+	<footer class="text-center text-lg-start">
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+			<p>© 2022 Copyright | Rainier Erey Peña Bolivar</p>
+		</div>
+		<!-- Copyright -->
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
