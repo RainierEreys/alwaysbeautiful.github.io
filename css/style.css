@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tiro+Devanagari+Sanskrit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root{
+    --primary-color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(192, 220, 243);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.btn-black{
+    color: var(--primary-color);
+}
+
+
+/*------------------------------------------------
+Barra de navegación
+-------------------------------------------------*/
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(41, 122, 230);
+    color: #eee;
+    position: fixed;
+    position: absolute;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: rgb(54, 52, 52);
+    height: 40px;
+}
+
+nav a#logo {
+    display: none;
+}
+
+
+/*------------------------------------------
+Showcase
+-------------------------------------------*/
+
+#showcase {
+    margin: 0;
+    padding: 0;
+    background: url("../images/showcase2.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+
+/*---------------------------------------------
+Info del Showcase1
+-----------------------------------------------*/
+#showcase .container{
+    margin-top: 20vh;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+#showcase .container h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#showcase .container h2{
+    margin-bottom: 2rem;
+    color: #005b8f;
+}
+
+#showcase .container p{
+    color: #000;
+    font-size: 1.3rem;
+  
+}
+
+
+/*--------------OJO---------------------------------
+multiclase(multiuso en containers)
+----------------OJO---------------------------------*/
+
+.container {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 4rem;
+    
+}
+
+/*---------------OJO------------------------------------
+Secciones
+-----------------OJO-----------------------------------*/
+
+.section{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 4rem;
+    
+    font-family: 'Roboto', sans-serif;
+    border-top: 2rem solid #0781b6;
+}
+
+.section#section2,
+.section#section3{
+    margin-top: 2rem;
+        
+}
+
+.section .tittle{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #555;
+}
+
+.section h3{
+    padding-bottom: 0;
+    background: transparent;
+    color: #005b8f;
+    width: auto;
+    font-family: 'Courgette', cursive;
+    border-radius: 10px;
+}
+
+
+/*------------------------------------------------
+Carrusel
+--------------------------------------------------*/
+
+.carrusel-items{
+    display: flex;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carrusel-item{
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    outline: 2px solid black;
+}
+
+.carrusel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item:hover{
+    transform: scale(1.3);
+}
+
+
+
+/*------------------------------------------------------------
+Productos "Lo más vendido"
+-------------------------------------------------------------*/
+
+#section2 h3{
+    background: transparent;
+    color: #005b8f;
+}
+
+.productos{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    position: auto!important;
+}
+
+.wrapper1{
+    width: 450px;
+    height: 500px;
+    background: transparent;
+    margin: auto;
+    
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    transform: scale(0.92);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.wrapper1:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgb(0,0,0,0.7);
+}
+
+.wrapper1 .container2{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper1 .container2 img{
+    height: 60%;
+    width: 100%;
+    background-size: 100%;
+}
+
+.wrapper1 .container2 .bottom{
+    width: 100%;
+    height: 40%;
+    transition: transform 0.5s;
+
+}
+
+.wrapper1 .container2 .bottom .left{
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+    float: left;
+}
+
+.wrapper1 .container2 .bottom .left .details{
+    padding-left: 20px;
+    float: left;
+    width: calc(70% - 40px);
+
+}
+
+.wrapper1 .container2 .bottom .left .details .datos{
+    font-size: 25px;
+
+}
+
+.wrapper1 .container2 .bottom .left .carrito{
+    float: right;
+    height: 100%;
+    background: #f1f1f1;
+    transition: background 0.5s;
+    border-left: solid thin rgba(0,0,0,0.1);
+}
+
+.wrapper1 .container2 .bottom .left .carrito i{
+    font-size: 30px;
+    padding: 30px;
+    color: #0781b6;
+    transition: transform 0.5s;
+}
+
+.wrapper1 .container2 .bottom .left .carrito:hover i{
+    transform: rotate(360deg);
+}
+
+.wrapper1 .inside{
+    z-index: 9;
+    background: #0781b6;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0 0 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+}
+
+.wrapper1 .inside:hover{
+    width: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    height: 80%;
+}
+
+.wrapper1 .inside .icon{
+    position: absolute;
+    right: 85px;
+    top: 85px;
+    color: white;
+    opacity: 1; 
+}
+
+.wrapper1 .inside:hover .icon{
+    opacity: 0;
+    right: 15px;
+    top: 15px;
+}
+
+.wrapper1 .inside:hover .content{
+    opacity: 0;
+    transform: scale(1);
+    transform: translateY(0);
+}
+
+.wrapper1 .inside .content{
+    padding: 5%;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(-200%);
+    transition: opacity 0.2s, transform 0.8s;
+
+}
+
+.wrapper1 .inside .content .carta-name,
+.wrapper1 .inside .content .carta-description{
+    color: white;
+}
+
+.wrapper1 .inside .content p{
+    font-size: 19px;
+}
+
+
+/*--------------------------------------------------
+Mapa
+----------------------------------------------------*/
+
+.container1{
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.tittle#map-head{
+    padding-bottom: 1rem;
+}
+
+.card-container{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px #555;
+
+}
+
+.header{
+    width: 40%;
+    background: url("../images/mapa.jpg") no-repeat center/cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.info{
+    text-align: center;
+    width: 60%;
+    font-family: 'Courgette', cursive;
+}
+
+.info h2{
+    font-size: 30px;
+}
+
+.info p{
+    margin: 2rem 2rem;
+}
+
+.header, .info{
+    padding: 20px;
+}
+
+
+/*---------------------------------------------------
+Boton para subir
+-----------------------------------------------------*/
+
+.boton{
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    justify-content: center;
+}
+.boton #boton-arriba{
+    
+    height: 5rem;
+}
+
+#boton-arriba i{
+    width: 3rem;
+    height: 3rem;
+    font-size: 60px;
+    color: #555;
+}
+
+#boton-arriba i:hover{
+    opacity: 1;
+}
+
+
+/*-----------------------------------------
+Footer
+------------------------------------------*/
+footer{
+    width: 100%;
+    padding: 2rem 0;
+    height: auto;
+    background: rgb(41, 122, 230);
+}
+
+.box-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0 2rem;
+    width: auto;
+}
+
+.box-form img{
+    height: 2rem;
+    width: 3.5rem;
+    margin: 2rem 0rem 2rem 2rem;
+}
+
+.box-form #contactanos{
+    margin: 2rem 2rem 2rem 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-form .mensaje{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box-form .form-contacto{
+    background: lightgrey;
+    height: 2rem;
+    border-radius: 5px;
+    margin: 2rem 1rem 0 0;
+    color: black;
+}
+
+.box-form #form-mensaje{
+    margin: 1rem 1rem 0 0;
+    background: lightgrey;
+    border-radius: 5px;
+    color: black;
+}
+
+.box-form .boton-contacto{
+    background: #555;
+    height: 2rem;
+    border-radius: 8px;
+    margin: 2rem 2rem 2rem 0;
+    color: white;
+}
+
+footer #logo{
+    color: #eee;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.box-footer .terminos{
+    max-width: 12rem;
+    font-weight: 500;
+    color: #552;
+    font-size: 18px;
+}
+
+.box-footer h2{
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+.box-footer a{
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+.box-footer a .fab{
+    font-size: 20px;
+}
+
+.box-datos{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.box-datos p{
+    margin-top: 1rem;
+}
+
+
+
+
+
+@media screen and (max-width: 580px) {
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+        background-color: rgb(41, 122, 230);
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a:hover {
+        background: #444;
+    }
+
+    nav a#logo:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+
+    nav a#logo {
+        display: block;
+        background-color: rgb(41, 122, 230);
+        ;
+        width: 100%;
+        position: relative;
+    }
+
+    #showcase{
+        height: 50vh;
+    }
+
+    #showcase .container{
+        margin-top: 17vh;
+    }
+
+    #showcase .container h1{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    #showcase .container h2{
+        font-size: 1.3rem;
+    }
+
+    #showcase .container #info{
+        display: none;
+    }
+
+    /*Section*/
+    
+    .section .tittle{
+        font-size: 1rem;
+        margin-bottom: 0;
+        color: #000;
+    }
+    
+    .section h3{
+        padding-bottom: 0;
+        font-size: 1rem;
+        color: #005b8f;
+        background: transparent;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    /*Carrusel*/
+
+    .carrusel-items{
+        overflow-y: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        overflow-x: hidden;
+     
+    }
+
+    .carrusel-item{
+        min-width: 175px;
+        max-width: 175px;
+        height: 85px;
+    }
+    
+    .carrusel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carrusel-item:hover{
+        transform: scale(1.3);
+    }
+
+    /*Lo más vendido*/
+    .section .productos .wrapper1 .container2 .bottom .left .details p{
+        display: none;
+    }
+
+    /*Mapa*/
+    .card-container{
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px 2px #555;
+    
+    }
+
+    .header{
+        width: auto;
+        height: 40%;
+        background: url("../images/mapa.jpg") no-repeat center/cover;
+    }
+    
+    .info{
+        text-align: center;
+        width: auto;
+        height: 60%;
+    }
+    
+}
+
+.barra-nav:before,
+.barra-nav:after {
+    content: "";
+    display: table;
+}
+
+.lista:after {
+    clear: both;
+}
+
+.lista {
+    zoom: 1;
+}

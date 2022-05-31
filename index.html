@@ -1,95 +1,337 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<title>Acercade|Rainier Peña</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Estilo de fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--Doc CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/c8502b9f76.js" crossorigin="anonymous"></script>
+
+    <title>TechnoRai</title>
+    <link rel="icon" href="./images/technorai.ico">
 </head>
 
 <body>
 
-	<div>
-		<nav class="navbar navbar-expand-lg bg-secondary" id="navbar">
-			<div class="container-fluid">
-				<a class="navbar-brand ps-3" href="index.html">
-					<img class="img-fluid h-75 w-50" src="images/logo_personal.png" alt="logo" id="logo">
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item px-4">
-							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-						</li>
-						<li class="nav-item px-4">
-							<a class="nav-link " href="inicio.html">Curriculum</a>
-						</li>
-						<li class="nav-item px-4">
-							<a class="nav-link" href="projects.html">Proyectos</a>
-						</li>
+    <!-------------------------------------------->
+    <!--Header-->
+    <!-------------------------------------------->
+    <div id="showcase">
+        <header>
 
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
+            <nav class='barra-nav'>
 
-	<h1 class="tittle fw-bold py-3">Acerca de mi</h1>
+                <a href='#' id='logo'>Techno<b class="btn-black">Rai</b></a>
 
-	<div class="row g-0 justify-content-center py-4 border-rounded-3">
-		<div class="card shadow-lg" style="width: 25rem;">
-			<img src="images/personal.jpg" class="img-fluid" alt="personal1">
-			<div class="card-body">
-				<h5 class="text-center fw-bold" id="tituloh4"><b>Rainier Peña</b></h5>
-				<p class="card-text text-center">Soy un jóven Venezolano, nacido en Caracas, de 21 años de edad. Estudiante de la
-					carrera Ingeniería
-					Informática en La Universidad Marítima del Caribe. Me gustan los nuevos retos, ya que esa es la
-					mejor
-					forma de aprendizaje. Puede ojear mis habilidades en el <a href="index.html">currículum</a>, de
-					igual
-					manera puede echar un vistazo a mis <a href="projects.html">proyectos</a>.</p>
-			</div>
-		</div>
-	</div>
+                <ul class='lista'>
+                    <li>
+                        <a href='#showcase'>Techno<b class="btn-black">Rai</b></a>
+                    </li>
+                    <li>
+                        <a href='#showcase'>Inicio</a>
+                    </li>
+                    <li>
+                        <a href='#productos'>Productos</a>
+                    </li>
+                    <li>
+                        <a href='#section2'>Lo más vendido</a>
+                    </li>
+                    <li>
+                        <a href='#footer'>Nosotros</a>
+                    </li>
+                </ul>
 
-	<!--<div class="container">
+            </nav>
 
-		<div class="card">
-			<img class="card-img-top" src="images/personal.jpg" alt="Card image cap">
-			<h4>Rainier Peña</h4>
-			</br>
-			<p>Soy un jóven Venezolano, nacido en Caracas, de 21 años de edad. Estudiante de la carrera Ingeniería
-				Informática en La Universidad Marítima del Caribe. Me gustan los nuevos retos, ya que esa es la mejor
-				forma de aprendizaje. Puede ojear mis habilidades en el <a href="index.html">currículum</a>, de igual
-				manera puede echar un vistazo a mis <a href="projects.html">proyectos</a>.</p>
-			</br>
+        </header>
 
-		</div>
+        <div class="container" id="banner">
+            <h1>Techno<b>Rai</b></h1>
+            <h2 id="typewriter"></h2>
+            <p id="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui non quaerat quibusdam reiciendis obcaecati minus est deleniti commodi dolore perferendis mollitia expedita veniam modi dolorum molestias recusandae excepturi inventore
+                sit, beatae libero deserunt saepe! Laboriosam quisquam
+            </p>
+        </div>
+    </div>
 
-	</div>-->
+    <!-------------------------------------------->
+    <!--Productos-->
+    <!-------------------------------------------->
+    <section class="section" id="productos">
+        <h2 class="tittle">
+            <i class="fas fa-laptop"></i> Productos <i class="fas fa-mobile"></i>
+        </h2>
+        <h3>¡Miles de dispositivos a tu alcance!</h3>
+        <div class="carrusel">
+            <div class="carrusel-items">
+                <div class="carrusel-item">
+                    <img src="./images/1.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/2.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/3.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/4.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/5.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/6.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/7.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/8.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/9.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/10.jpg" alt="">
+                </div>
+                <div class="carrusel-item">
+                    <img src="./images/11.jpg" alt="">
+                </div>
+            </div>
+        </div>
 
-	<footer class="text-center text-lg-start">
-		<!-- Copyright -->
-		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    </section>
 
-			<p>© 2022 Copyright | Rainier Erey Peña Bolivar</p>
-		</div>
-		<!-- Copyright -->
-	</footer>
+    <!-------------------------------------------->
+    <!--Lo más vendido-->
+    <!-------------------------------------------->
+    <section class="section" id="section2">
+        <h2 class="tittle">
+            <i class="fas fa-cart-shopping"></i> Lo más vendido <i class="fas fa-bag-shopping"></i>
+        </h2>
+        <h3>¡No te quedes sin el tuyo!</h3>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-		crossorigin="anonymous"></script>
+        <section class="productos center" id="center">
+            <div class="wrapper1">
+                <div class="container2">
+                    <img src="./images/iphone.jpg" alt="">
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2 class="datos">Iphone 6</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ut.</p>
+                            </div>
+                            <div class="carrito">
+                                <a href="">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="carta-name">Nombre</h2>
+                        <p class="carta-description">Descripción</p>
+                        <h4>hola soy yo</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper1">
+                <div class="container2">
+                    <img src="./images/iphone11.jpg" alt="">
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2 class="datos">Iphone 11</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolor.</p>
+                            </div>
+                            <div class="carrito">
+                                <a href="">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="carta-name">Nombre</h2>
+                        <p class="carta-description">Descripción</p>
+                        <h4>hola soy yo</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper1">
+                <div class="container2">
+                    <img src="./images/ipad.jpg" alt="">
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2 class="datos">Ipad</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, incidunt!</p>
+                            </div>
+                            <div class="carrito">
+                                <a href="">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="carta-name">Nombre</h2>
+                        <p class="carta-description">Descripción</p>
+                        <h4>hola soy yo</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper1">
+                <div class="container2">
+                    <img src="./images/notebook.jpg" alt="">
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2 class="datos">Notebook</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, ex!</p>
+                            </div>
+                            <div class="carrito">
+                                <a href="">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="carta-name">Nombre</h2>
+                        <p class="carta-description">Descripción</p>
+                        <h4>hola soy yo</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-------------------------------------------->
+    <!--Mapa-->
+    <!-------------------------------------------->
+    <section class="section" id="section3">
+        <div class="container1">
+            <h2 class="tittle" id="map-head">
+                <i class="fas fa-map-location-dot"></i> Ubicanos <i class="fas fa-location-dot"></i>
+            </h2>
+            <div class="card-container">
+                <div class="header">
+
+                </div>
+                <div class="info">
+                    <h2>Ubicados en Caracas, Venezuela</h2>
+                    <h3 id="typewriter2"></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eos, odio perferendis asperiores harum quis voluptatum repellat culpa commodi iure veniam debitis nulla optio, maxime maiores ipsum voluptatem dignissimos enim cumque?
+                        Officiis fugiat qui assumenda ipsam? Necessitatibus blanditiis quae eius?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------------->
+    <!--Botón de subida-->
+    <!-------------------------------------------->
+    <div class="boton">
+        <a href="#showcase" id="boton-arriba">
+            <i class="fas fa-circle-chevron-up"></i>"></i>
+        </a>
+    </div>
+
+
+    <!-------------------------------------------->
+    <!--Footer-->
+    <!-------------------------------------------->
+    <footer id="footer">
+        <div class="box-form">
+            <img src="./images/soporte1.png" alt="">
+            <p id="contactanos">Contáctanos</p>
+            <div class="mensaje">
+                <input type="email" class="form-contacto" id="email" placeholder="name@example.com">
+                <textarea class="form-control" id="form-mensaje" rows="3" placeholder="Escriba su mensaje"></textarea>
+            </div>
+            <button class="boton-contacto" type="button">Enviar mensaje</button>
+        </div>
+        <div class="container-footer">
+            <div class="box-footer">
+                <div class="logo">
+                    <a href='#' id='logo'>Techno<b class="btn-black">Rai</b></a>
+                </div>
+                <div class="terminos">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur et rem ea. Totam, expedita?
+                    </p>
+                </div>
+            </div>
+            <div class="box-footer">
+                <h2>Mercado</h2>
+                <a href="">Telefonía</a>
+                <a href="">Computación</a>
+                <a href="">Fotografía</a>
+                <a href="">Tablets</a>
+            </div>
+            <div class="box-footer">
+                <h2>Compañía</h2>
+                <a href="">Acerca de</a>
+                <a href="">Quiénes somos</a>
+                <a href="">Misión y visión</a>
+            </div>
+            <div class="box-footer">
+                <h2>Redes Sociales</h2>
+                <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+                <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="box-datos">
+            <hr>
+            <p><b>TechnoRai &copy;</b> | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
