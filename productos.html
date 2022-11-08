@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Always Beautiful</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <!--<header>-->
+    <header class="py-3 h-100 border-bottom" style="background-color: #A0E7E5;">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <img src="logo.png" id="img-logo" alt="">
+                <span class="tittle-page" style="margin-left: 2rem; color: cornflowerblue;"><b class="text-pink">Always</b> Beautiful</span>
+            </a>
+            <ul class="nav mx-auto" style="display: flex;align-items: center;font-size: 1.2rem;">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 active item_menu" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="productos.html" class="nav-link px-2 item_menu">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Contactos</a></li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search" style="display: grid;align-content: space-between;">
+                <input type="search" class="form-control" placeholder="Buscar Productos" aria-label="Search">
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="width: max-content;">
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #E1306C;"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-youtube" style="color: #c4302b;"></i></a></li>
+                </ul>
+            </form>
+
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div id="banner">
+            <img src="banner.jpeg" alt="">
+        </div>
+    </div>
+    <div class="container">
+
+        <div id="post-banner">
+            <!--
+            <aside>
+                <h2>Nuestras Marcas</h2>
+                <img src="marca1.jpg" alt="">
+                <img src="marca2.jpg" alt="">
+                <img src="marca3.jpg" alt="">
+                <img src="marca4.jpg" alt="">
+
+            </aside>
+        -->
+
+            <div class="py-4">
+                <div class="row">
+
+                    <main id="items" class="col-sm-8 row"></main>
+
+                    <aside class="col-sm-4 h-100">
+                        <h2>Carrito</h2>
+                        <!-- Elementos del carrito -->
+                        <ul id="carrito" class="list-group"></ul>
+                        <hr>
+                        <!-- Precio total -->
+                        <p class="text-right">Total: <span id="total"></span>Bs.</p>
+                        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                    </aside>
+                </div>
+            </div>
+
+            <!--
+            <div id="formulario">
+                <form action="" name="formulario" id="formulario">
+                    <h4 class="text-center fw-bold">Contáctanos</h4>
+                    <div class="my-2 d-flex flex-column">
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" id="inp-nombre" onblur="letramayuscula()">
+                    </div>
+                    <div class="my-2 d-flex flex-column">
+                        <label>Apellido:</label>
+                        <input type="text" name="apellido" id="inp-apellido" onblur="letramayuscula()">
+                    </div>
+                    <div class="my-2 d-flex flex-column">
+                        <label>Correo Electrónico:</label>
+                        <input type="email" name="email" id="inp-email1">
+                    </div>
+                    <div class="my-2 d-flex flex-column">
+                        <label>Confirme su correo electrónico:</label>
+                        <input type="email" name="email" id="inp-email2" onblur="compararemail()">
+                        <p id="mensajecomparacion"></p>
+                    </div>
+                    <div class="d-flex flex-column my-1">
+                        <label>Escriba un comentario</label>
+                        <textarea id="textarea" maxlenght="100"></textarea>
+                        <div id="contador">0/100</div>
+                    </div>
+                    <div class="my-2">
+                        <label>Acepto los terminos y condiciones</label>
+                        <input type="checkbox" name="" id="checkterms">
+                    </div>
+                    <div class="my-2">
+                        <input type="button" name="" id="botondelete" value="Borrar Todo" onclick="vermodal()">
+                        <input type="button" name="" id="botonsubmit" value="Aceptar" onclick="crearcookie()">
+                        <span id="mensaje2"></span>
+                    </div>
+                </form>
+            </div>
+        -->
+
+
+        </div>
+        <div class="container">
+
+
+
+            <div class="col-md-12 pane">
+                <div class="col-md-4">
+                    <div class="alert alert-light">
+                        <h4>Dejanos saber tu opinión...</h4>
+                    </div>
+                </div>
+                <div id="result">
+
+
+
+
+                </div>
+
+                <div class="col-md-4 mx-auto m-5">
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input class="form-control" type="text" id="name">
+                        </div>
+                        <!--
+                        <div clas="form-group">
+                            <label>Apellido:</label>
+                            <input class="form-control" type="text" name="apellido" id="apellido">
+                        </div>
+                    -->
+                        <div class="form-group">
+                            <label>Comentario</label>
+                            <textarea id="comment" class="form-control"></textarea></label>
+                        </div>
+                        <button type="button" class="btn btn-info my-2" onclick="commentBox();">Enviar</button>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="section footer-classic context-dark pt-5">
+        <div class="container wide">
+
+            <div class="list-wrapper">
+                <!--Enlaces de interes-->
+                <div class="row justify-content-around">
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-8" style="max-width: 300px;">
+                        <h3>Accesos rapidos</h3>
+                        <ul class="list">
+                            <li><a href="#" data-waypoint-to="#">Nosotros</a></li>
+                            <li><a href="index.html" data-waypoint-to="#">Inicio</a></li>
+                            <li><a href="#" data-waypoint-to="#">Blog</a></li>
+                            <li><a href="productos.html" data-waypoint-to="#">Productos</a></li>
+                            <li><a href="#" data-waypoint-to="#">Contactanos</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-8" style="max-width: 300px;">
+                        <h3>Enlaces de interés</h3>
+                        <ul class="list">
+                            <li><a href="#" data-waypoint-to="#">Centro de ayuda</a></li>
+                            <li><a href="#" data-waypoint-to="#">FAQs</a></li>
+                            <li><a href="#" data-waypoint-to="#">productos</a></li>
+                            <li><a href="#" data-waypoint-to="#">Terminos y condiciones</a></li>
+                            <li><a href="#" data-waypoint-to="#">Politicas de privacidad</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-8">
+                        <div class="phone-wrap">
+                            <div class="contactus">
+                                <h3>Contáctanos:</h3>
+                                <span><b>WhatsApp: </b>04143196144</span>
+                                <span><b>Teléfono: </b>04143196144</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr style="border-top: 4px solid;border-color:#ef7fb2 ">
+            <div class="row">
+                <!--Copyright-->
+                <div class="column" style="height: auto;">
+                    <div class="group-md group-middle text-center">
+                        <p class="rights fw-bold"><span>©&nbsp; </span><span class="copyright-year">2022</span><span>&nbsp;</span><span>Always Beautiful | Todos los derechos reservados</span><span>.&nbsp;</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="productos.js"></script>
+</body>
+
+</html>

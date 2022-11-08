@@ -5,333 +5,327 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Estilo de fuente-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-    <!--Doc CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-
-    <!--Iconos-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/c8502b9f76.js" crossorigin="anonymous"></script>
-
-    <title>TechnoRai</title>
-    <link rel="icon" href="./images/technorai.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Always Beautiful</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
 <body>
-
-    <!-------------------------------------------->
-    <!--Header-->
-    <!-------------------------------------------->
-    <div id="showcase">
-        <header>
-
-            <nav class='barra-nav'>
-
-                <a href='#' id='logo'>Techno<b class="btn-black">Rai</b></a>
-
-                <ul class='lista'>
-                    <li>
-                        <a href='index.html'>Techno<b class="btn-black">Rai</b></a>
-                    </li>
-                    <li>
-                        <a href='#showcase'>Inicio</a>
-                    </li>
-                    <li>
-                        <a href='#productos'>Productos</a>
-                    </li>
-                    <li>
-                        <a href='#section2'>Lo más vendido</a>
-                    </li>
-                    <li>
-                        <a href='#footer'>Nosotros</a>
-                    </li>
+    <!--<header>-->
+    <header class="py-3 h-100 border-bottom" style="background-color: #A0E7E5;">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <img src="logo.png" id="img-logo" alt="">
+                <span class="tittle-page" style="margin-left: 2rem; color: cornflowerblue;"><b class="text-pink">Always</b> Beautiful</span>
+            </a>
+            <ul class="nav mx-auto" style="display: flex;align-items: center;font-size: 1.2rem;">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 active item_menu" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="productos.html" class="nav-link px-2 item_menu">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Contactos</a></li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search" style="display: grid;align-content: space-between;">
+                <input type="search" class="form-control" placeholder="Buscar Productos" aria-label="Search">
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="width: max-content;">
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #E1306C;"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-youtube" style="color: #c4302b;"></i></a></li>
                 </ul>
+            </form>
 
-            </nav>
-
-        </header>
-
-        <div class="container" id="banner">
-            <h1>Techno<b>Rai</b></h1>
-            <h2 id="typewriter"></h2>
-            <p id="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui non quaerat quibusdam reiciendis obcaecati minus est deleniti commodi dolore perferendis mollitia expedita veniam modi dolorum molestias recusandae excepturi inventore
-                sit, beatae libero deserunt saepe! Laboriosam quisquam
-            </p>
         </div>
+    </header>
+    <!--<nav class="navbar">
+            <div class="div-navbar">
+                <a href="">
+                    <img src="logo.png" id="img-logo" alt="">
+                </a>
+                <div id="content-opc">
+
+                    <h1>¡PARA SER BELLA, DEBES VER ESTRELLAS!</h1>
+
+                    <div>
+                        <ul class="opciones-menu">
+                            <a href="">
+                                <li>Inicio</li>
+                            </a>
+                            <a href="productos.html">
+                                <li>Productos</li>
+                            </a>
+                            <a href="">
+                                <li>Blog</li>
+                            </a>
+                            <a href="">
+                                <li>Contáctanos</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div id="form-redes">
+                    <div id="formulario-search">
+                        <input type="text">
+                        <button>Buscar</button>
+                    </div>
+                    <div class="text-lg-right">
+                        <ul class="group-xl group-middle">
+                            <li>
+                                <a class="icon" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="icon" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a class="icon" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="icon" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="redes-sociales">
+                        <img src="logo_facebook.png" alt="" class="rrss" style="height: 100%;">
+                        <img src="logo_instagram.jpg" alt="" class="rrss" style="height: 100%;">
+                        <img src="logo_youtube.png" alt="" class="rrss" style="height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </nav>-->
+    <!--</header>-->
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="banner-carousel.jpeg" alt="" style="width: -webkit-fill-available;">
+                    <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>-->
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Ingresa Hoy a nuestras tienda y ve nuestras nuevas promociones.</h1>
+                            <p>En Always beautiful tenemos el agrado de estar siempre a tu lado acompañando esos momentos de belleza.</p>
+                            <p><a class="btn btn-lg btn-primary" href="productos.html">Ver promociones</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="banner-carousel1.jpeg" alt="" style="width: -webkit-fill-available;">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Compra ya</h1>
+                            <p>Ve nuestro catalogo y consulta al asesor de ventas</p>
+                            <p><a class="btn btn-lg btn-primary" href="productos.html">Ir a la Tienda</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--<div id="banner">
+            <img src="banner.jpeg" alt="">
+        </div>-->
+        <div id="post-banner">
+            <aside>
+                <h2>Nuestras Marcas</h2>
+                <img src="marca1.jpg" alt="">
+                <img src="marca2.jpg" alt="">
+                <img src="marca3.jpg" alt="">
+                <img src="marca4.jpg" alt="">
+
+            </aside>
+            <div class="row p-5">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="product1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Labial Rojo</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="product2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Esmalte de Uñas</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="product5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Lima de Uñas</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="product3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Brillo de Uñas</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="product4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Base</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="main">
+                
+                <div id="formulario">
+                    <form action="" name="formulario" id="formulario">
+                        <h4 class="text-center fw-bold">Contáctanos</h4>
+                        <div class="my-2 d-flex flex-column">
+                            <label>Nombre:</label>
+                            <input type="text" name="nombre" id="inp-nombre" onblur="letramayuscula()">
+                        </div>
+                        <div class="my-2 d-flex flex-column">
+                            <label>Apellido:</label>
+                            <input type="text" name="apellido" id="inp-apellido" onblur="letramayuscula()">
+                        </div>
+                        <div class="my-2 d-flex flex-column">
+                            <label>Correo Electrónico:</label>
+                            <input type="email" name="email" id="inp-email1">
+                        </div>
+                        <div class="my-2 d-flex flex-column">
+                            <label>Confirme su correo electrónico:</label>
+                            <input type="email" name="email" id="inp-email2" onblur="compararemail()">
+                            <p id="mensajecomparacion"></p>
+                        </div>
+                        <div class="d-flex flex-column my-1">
+                            <label>Escriba un comentario</label>
+                            <textarea id="textarea" maxlenght="100"></textarea>
+                            <div id="contador">0/100</div>
+                        </div>
+                        <div class="my-2">
+                            <label>Acepto los terminos y condiciones</label>
+                            <input type="checkbox" name="" id="checkterms">
+                        </div>
+                        <div class="my-2">
+                            <input type="button" name="" id="botondelete" value="Borrar Todo" onclick="vermodal()">
+                            <input type="button" name="" id="botonsubmit" value="Aceptar" onclick="crearcookie()">
+                            <span id="mensaje2"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mx-auto modal-confimacion d-none" id="modal">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirme</h5>
+                        <button type="button" class="btn-close" aria-label="Close" id="close_modal" onclick="cerrarmodal()"></button>
+                    </div>
+                    <hr/>
+                    <div class="modal-body">
+                        <span class="fw-bold">¿Está seguro que desea borrar todos los datos?</span>
+                    </div>
+                    <div class="modal-footer my-3">
+                        <button type="button" class="btn btn-secondary mx-3" onclick="cerrarmodal()">Cancelar</button>
+                        <button type="button" class="btn-pink mx-3" id="alldelete" onclick="borrartodo()">Borrar Todo</button>
+                    </div>
+                </div>
+            </div>
+        -->
+        </div>
+
+
     </div>
+    <footer class="section footer-classic context-dark pt-5">
+        <div class="container wide">
 
-    <!-------------------------------------------->
-    <!--Productos-->
-    <!-------------------------------------------->
-    <section class="section" id="productos">
-        <h2 class="tittle">
-            <i class="fas fa-laptop"></i> Productos <i class="fas fa-mobile"></i>
-        </h2>
-        <h3>¡Miles de dispositivos a tu alcance!</h3>
-        <div class="carrusel">
-            <div class="carrusel-items">
-                <div class="carrusel-item">
-                    <img src="./images/1.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/2.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/3.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/4.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/5.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/6.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/7.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/8.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/9.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/10.jpg" alt="">
-                </div>
-                <div class="carrusel-item">
-                    <img src="./images/11.jpg" alt="">
-                </div>
-            </div>
-        </div>
+            <div class="list-wrapper">
+                <!--Enlaces de interes-->
+                <div class="row justify-content-around">
 
-    </section>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-8" style="max-width: 300px;">
+                        <h3>Accesos rapidos</h3>
+                        <ul class="list">
+                            <li><a href="#" data-waypoint-to="#">Nosotros</a></li>
+                            <li><a href="index.html" data-waypoint-to="#">Inicio</a></li>
+                            <li><a href="#" data-waypoint-to="#">Blog</a></li>
+                            <li><a href="productos.html" data-waypoint-to="#">Productos</a></li>
+                            <li><a href="#" data-waypoint-to="#">Contactanos</a></li>
 
-    <!-------------------------------------------->
-    <!--Lo más vendido-->
-    <!-------------------------------------------->
-    <section class="section" id="section2">
-        <h2 class="tittle">
-            <i class="fas fa-cart-shopping"></i> Lo más vendido <i class="fas fa-bag-shopping"></i>
-        </h2>
-        <h3>¡No te quedes sin el tuyo!</h3>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-8" style="max-width: 300px;">
+                        <h3>Enlaces de interés</h3>
+                        <ul class="list">
+                            <li><a href="#" data-waypoint-to="#">Centro de ayuda</a></li>
+                            <li><a href="#" data-waypoint-to="#">FAQs</a></li>
+                            <li><a href="#" data-waypoint-to="#">productos</a></li>
+                            <li><a href="#" data-waypoint-to="#">Terminos y condiciones</a></li>
+                            <li><a href="#" data-waypoint-to="#">Politicas de privacidad</a></li>
 
-        <section class="productos center" id="center">
-            <div class="wrapper1">
-                <div class="container2">
-                    <img src="./images/iphone.jpg" alt="">
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h2 class="datos">Iphone 6</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ut.</p>
-                            </div>
-                            <div class="carrito">
-                                <a href="">
-                                    <i class="fas fa-cart-plus"></i>
-                                </a>
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-8">
+                        <div class="phone-wrap">
+                            <div class="contactus">
+                                <h3>Contáctanos:</h3>
+                                <span><b>WhatsApp: </b>04143196144</span>
+                                <span><b>Teléfono: </b>04143196144</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="inside">
-                    <div class="icon">
-                        <i class="far fa-eye"></i>
-                    </div>
-                    <div class="content">
-                        <h2 class="carta-name">Nombre</h2>
-                        <p class="carta-description">Descripción</p>
-                        <h4>hola soy yo</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="wrapper1">
-                <div class="container2">
-                    <img src="./images/iphone11.jpg" alt="">
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h2 class="datos">Iphone 11</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolor.</p>
-                            </div>
-                            <div class="carrito">
-                                <a href="">
-                                    <i class="fas fa-cart-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon">
-                        <i class="far fa-eye"></i>
-                    </div>
-                    <div class="content">
-                        <h2 class="carta-name">Nombre</h2>
-                        <p class="carta-description">Descripción</p>
-                        <h4>hola soy yo</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="wrapper1">
-                <div class="container2">
-                    <img src="./images/ipad.jpg" alt="">
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h2 class="datos">Ipad</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, incidunt!</p>
-                            </div>
-                            <div class="carrito">
-                                <a href="">
-                                    <i class="fas fa-cart-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon">
-                        <i class="far fa-eye"></i>
-                    </div>
-                    <div class="content">
-                        <h2 class="carta-name">Nombre</h2>
-                        <p class="carta-description">Descripción</p>
-                        <h4>hola soy yo</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="wrapper1">
-                <div class="container2">
-                    <img src="./images/notebook.jpg" alt="">
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h2 class="datos">Notebook</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, ex!</p>
-                            </div>
-                            <div class="carrito">
-                                <a href="">
-                                    <i class="fas fa-cart-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon">
-                        <i class="far fa-eye"></i>
-                    </div>
-                    <div class="content">
-                        <h2 class="carta-name">Nombre</h2>
-                        <p class="carta-description">Descripción</p>
-                        <h4>hola soy yo</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <!-------------------------------------------->
-    <!--Mapa-->
-    <!-------------------------------------------->
-    <section class="section" id="section3">
-        <div class="container1">
-            <h2 class="tittle" id="map-head">
-                <i class="fas fa-map-location-dot"></i> Ubicanos <i class="fas fa-location-dot"></i>
-            </h2>
-            <div class="card-container">
-                <div class="header">
 
                 </div>
-                <div class="info">
-                    <h2>Ubicados en Caracas, Venezuela</h2>
-                    <h3 id="typewriter2"></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eos, odio perferendis asperiores harum quis voluptatum repellat culpa commodi iure veniam debitis nulla optio, maxime maiores ipsum voluptatem dignissimos enim cumque?
-                        Officiis fugiat qui assumenda ipsam? Necessitatibus blanditiis quae eius?</p>
+            </div>
+            <hr style="border-top: 4px solid;border-color:#ef7fb2 ">
+            <div class="row">
+                <!--Copyright-->
+                <div class="column" style="height: auto;">
+                    <div class="group-md group-middle text-center">
+                        <p class="rights fw-bold"><span>©&nbsp; </span><span class="copyright-year">2022</span><span>&nbsp;</span><span>Always Beautiful | Todos los derechos reservados</span><span>.&nbsp;</span></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-------------------------------------------->
-    <!--Botón de subida-->
-    <!-------------------------------------------->
-    <div class="boton">
-        <a href="#showcase" id="boton-arriba">
-            <i class="fas fa-circle-chevron-up"></i>"></i>
-        </a>
-    </div>
-
-
-    <!-------------------------------------------->
-    <!--Footer-->
-    <!-------------------------------------------->
-    <footer id="footer">
-        <div class="box-form">
-            <img src="./images/soporte1.png" alt="">
-            <p id="contactanos">Contáctanos</p>
-            <div class="mensaje">
-                <input type="email" class="form-contacto" id="email" placeholder="name@example.com">
-                <textarea class="form-control" id="form-mensaje" rows="3" placeholder="Escriba su mensaje"></textarea>
             </div>
-            <button class="boton-contacto" type="button">Enviar mensaje</button>
-        </div>
-        <div class="container-footer">
-            <div class="box-footer">
-                <div class="logo">
-                    <a href='#' id='logo'>Techno<b class="btn-black">Rai</b></a>
-                </div>
-                <div class="terminos">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur et rem ea. Totam, expedita?
-                    </p>
-                </div>
-            </div>
-            <div class="box-footer">
-                <h2>Mercado</h2>
-                <a href="">Telefonía</a>
-                <a href="">Computación</a>
-                <a href="">Fotografía</a>
-                <a href="">Tablets</a>
-            </div>
-            <div class="box-footer">
-                <h2>Compañía</h2>
-                <a href="">Acerca de</a>
-                <a href="">Quiénes somos</a>
-                <a href="">Misión y visión</a>
-            </div>
-            <div class="box-footer">
-                <h2>Redes Sociales</h2>
-                <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href=""><i class="fab fa-twitter"></i> Twitter</a>
-                <a href=""><i class="fab fa-instagram"></i> Instagram</a>
-            </div>
-        </div>
-        <div class="box-datos">
-            <hr>
-            <p><b>TechnoRai &copy;</b> | Todos los derechos reservados</p>
         </div>
     </footer>
+    <!--<footer>
+        <div class="foot-start">
+            <strong>Dirección:</strong>
+            <p>Catia La Mar. Estado La Guaira. Venezuela</p>
+        </div>
+        <div>
+            <span>Always Beautiful | Todos los derechos reservados @</span>
+        </div>
+        <div class="contactus">
+            <strong>Contáctanos:</strong>
+            <span><b>WhatsApp: </b>04143196144</span>
+            <span><b>Teléfono: </b>04143196144</span>
+        </div>
+    </footer>-->
 
-    <!--Script-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
-
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="js/main.js"></script>
-
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>

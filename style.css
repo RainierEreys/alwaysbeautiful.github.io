@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+.tittle-page {
+    font-family: 'Poor Story', cursive;
+    font-size: 28px;
+}
+
+.text-pink {
+    color: deeppink;
+}
+
+.item_menu {
+    font-family: 'Poor Story', cursive;
+    color: rgb(52, 122, 253)!important;
+    font-size: 21px!important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+header {
+    height: 5rem;
+    width: 100%;
+}
+
+.fa-brands {
+    font-size: 35px;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+}
+
+header nav div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+nav.navbar {
+    background: #A0E7E5;
+}
+
+img#img-logo {
+    width: 90px;
+    border-radius: 50px;
+}
+
+.navbar a {
+    margin: 0 3%;
+}
+
+div.div-navbar {
+    display: flex;
+}
+
+div#content-opc {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+div#content-opc h1 {
+    margin: auto;
+}
+
+ul.opciones-menu {
+    display: flex;
+    margin: auto;
+}
+
+ul.opciones-menu a {
+    margin: 2% 3%;
+}
+
+ul.opciones-menu li {
+    list-style: none;
+    text-decoration: none;
+}
+
+div#form-redes {
+    display: flex;
+    width: 20%;
+    margin: 0 3%;
+    flex-direction: column;
+}
+
+div#form-search {
+    display: flex;
+}
+
+div#redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+div.container {
+    margin: 0 10%;
+}
+
+div#banner {
+    width: 100%;
+}
+
+div#banner img {
+    width: 100%;
+}
+
+div#post-banner {
+    display: flex;
+}
+
+aside {
+    border: 1px solid #000;
+    width: 25%;
+    text-justify: center;
+    margin: 1rem 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+aside h2 {
+    text-justify: auto;
+}
+
+aside img {
+    width: 80%;
+    margin: auto 10%;
+    margin-top: 1rem;
+    height: 97px;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+footer {
+    height: auto;
+    background: #A0E7E5;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+}
+
+.contactus {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-start,
+.contactus {
+    align-self: center;
+}
+
+.rrss {
+    height: 60%!important;
+}
+
+
+/*ESTILO VENTANA MODAL*/
+
+div#modal {
+    width: 40%;
+    top: 60%;
+    left: 30%;
+    height: auto;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: absolute;
+    background: white;
+}
+
+
+/*ESTILO COLOR DE BOTON ROSA*/
+
+.btn-pink {
+    background: hotpink;
+    border-radius: .375rem;
+    padding: 0.375rem 0.75rem;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.d-none {
+    display: none;
+}
+
+
+/*ESTILO FORMULARIO*/
+
+div#formulario {
+    width: 40%;
+    background: #A0E7E5;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: auto;
+}
+
+
+/*ESTILOS INPUT*/
+
+input,
+textarea {
+    border-radius: 5px;
+    border: .5px solid #555;
+}
+
+input:focus {
+    background: rgb(211, 203, 203);
+}
+
+.main {
+    width: 100%;
+    padding: 2rem;
+}
+
+input#botondelete,
+input#botonsubmit {
+    padding: .5rem;
+}
