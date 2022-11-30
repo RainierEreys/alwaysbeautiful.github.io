@@ -50,7 +50,7 @@ function renderizarProductos() {
     bdd.forEach((info) => {
         // Estructura
         const Carta = document.createElement('div');
-        Carta.classList.add('card', 'col-sm-5', 'm-2');
+        Carta.classList.add('card', 'col-lg-5', 'col-md-7', 'col-sm-10', 'mx-auto', 'm-2');
         // Body
         const CartaBody = document.createElement('div');
         CartaBody.classList.add('card-body');

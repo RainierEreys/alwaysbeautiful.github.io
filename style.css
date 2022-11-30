@@ -310,3 +310,23 @@ textarea{
     border-radius: 5px;
     border: .5px solid #555;
 }
+
+
+
+
+@media (max-width:  992px) and (min-width:  768px){
+    .md-hidden{
+        display: none;
+    }
+}
+@media (max-width:  768px) and (min-width: 576px){
+    .sm-hidden{
+        display: none;
+    }
+}
+
+@media (max-width:  576px){
+    .xs-hidden{
+        display: none;
+    }
+}
