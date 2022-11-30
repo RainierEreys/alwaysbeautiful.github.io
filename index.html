@@ -26,12 +26,12 @@
                 <li class="nav-item"><a href="index.html" class="nav-link px-2 active item_menu" aria-current="page">Inicio</a></li>
                 <li class="nav-item"><a href="productos.html" class="nav-link px-2 item_menu">Productos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Blog</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Contactos</a></li>
+                <li class="nav-item"><a href="contactanos.html" class="nav-link px-2 item_menu">Contactos</a></li>
             </ul>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search" style="display: grid;align-content: space-between;">
                 <input type="search" class="form-control" placeholder="Buscar Productos" aria-label="Search">
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="width: max-content;">
-                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/profile.php?id=100086946252602"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a></li>
                     <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #E1306C;"></i></a></li>
                     <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-youtube" style="color: #c4302b;"></i></a></li>
                 </ul>
@@ -95,7 +95,8 @@
             </div>
         </nav>-->
     <!--</header>-->
-    <div class="container-fluid">
+    <div id="wrapinicio">
+        <div class="container-fluid">
         <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -141,7 +142,7 @@
             <img src="banner.jpeg" alt="">
         </div>-->
         <div id="post-banner">
-            <aside>
+            <aside class="bg-light">
                 <h2>Nuestras Marcas</h2>
                 <img src="marca1.jpg" alt="">
                 <img src="marca2.jpg" alt="">
@@ -150,47 +151,298 @@
 
             </aside>
             <div class="row p-5">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
                         <img src="product1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-text text-center">Labial Rojo</h2>
                         </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Ver Producto
+                        </button>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
-                    <div class="card" style="width: 18rem;">
+
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
                         <img src="product2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-text text-center">Esmalte de Uñas</h2>
                         </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                          Ver Producto
+                        </button>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
                         <img src="product5.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-text text-center">Lima de Uñas</h2>
                         </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                          Ver Producto
+                        </button>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
                         <img src="product3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-text text-center">Brillo de Uñas</h2>
                         </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                          Ver Producto
+                        </button>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1 m-3">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
+                        <img src="product6.png" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Creyón de Ceja</h2>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                          Ver Producto
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
                         <img src="product4.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-text text-center">Base</h2>
                         </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                          Ver Producto
+                        </button>
                     </div>
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
+                        <img src="product7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Rimmel</h2>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                          Ver Producto
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
+                        <img src="product8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Base</h2>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                          Ver Producto
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-1 col-1 p-4">
+                    <div class="card p-2" style="width: 18rem;">
+                        <img src="product9.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">Perfume</h2>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                          Ver Producto
+                        </button>
+                    </div>
+                </div>
+                
+
             </div>
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Labial Rojo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="h4.png" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Esmalte de Uñas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="modalesmalte.png" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Lima de Uñas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="modallima.png" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Brillo de Uñas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="modalbrillo.png" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Creyón de Ceja</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="h2.jpg" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Base</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="modalbase.png" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Rimmel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="h1.jpg" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Base</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="h3.png" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Perfume de Dama</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column">
+            <img src="h9.png" class="img-fluid mx-auto">
+            <span class="fw-bold text-center w-100">Imágen de referencia</span>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">¡Contactar vendedor!</button>
+      </div>
+    </div>
+  </div>
+</div>
             <!--
             <div class="main">
                 
@@ -252,6 +504,8 @@
 
 
     </div>
+    </div>
+    
     <footer class="section footer-classic context-dark pt-5">
         <div class="container wide">
 

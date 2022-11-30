@@ -26,12 +26,12 @@
                 <li class="nav-item"><a href="index.html" class="nav-link px-2 active item_menu" aria-current="page">Inicio</a></li>
                 <li class="nav-item"><a href="productos.html" class="nav-link px-2 item_menu">Productos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Blog</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 item_menu">Contactos</a></li>
+                <li class="nav-item"><a href="contactanos.html" class="nav-link px-2 item_menu">Contactos</a></li>
             </ul>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search" style="display: grid;align-content: space-between;">
                 <input type="search" class="form-control" placeholder="Buscar Productos" aria-label="Search">
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="width: max-content;">
-                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/profile.php?id=100086946252602"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a></li>
                     <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #E1306C;"></i></a></li>
                     <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-youtube" style="color: #c4302b;"></i></a></li>
                 </ul>
@@ -39,11 +39,10 @@
 
         </div>
     </header>
-    <div class="container-fluid">
+    <div id="wraproducto">
         <div id="banner">
             <img src="banner.jpeg" alt="">
         </div>
-    </div>
     <div class="container">
 
         <div id="post-banner">
@@ -63,7 +62,7 @@
 
                     <main id="items" class="col-sm-8 row"></main>
 
-                    <aside class="col-sm-4 h-100">
+                    <aside class="col-sm-4 h-100 bg-light">
                         <h2>Carrito</h2>
                         <!-- Elementos del carrito -->
                         <ul id="carrito" class="list-group"></ul>
@@ -116,11 +115,15 @@
 
 
         </div>
+        
+        
+    </div>
+    <div class="bg-light">
         <div class="container">
 
 
 
-            <div class="col-md-12 pane">
+            <div class="col-md-12 pane bg-light">
                 <div class="col-md-4">
                     <div class="alert alert-light">
                         <h4>Dejanos saber tu opinión...</h4>
@@ -133,11 +136,11 @@
 
                 </div>
 
-                <div class="col-md-4 mx-auto m-5">
+                <div class="col-md-4 mx-auto mx-5">
                     <form>
                         <div class="form-group">
                             <label>Nombre</label>
-                            <input class="form-control" type="text" id="name">
+                            <input class="form-control" type="text" id="name" style="border: 1px solid #afafaf;">
                         </div>
                         <!--
                         <div clas="form-group">
@@ -147,7 +150,7 @@
                     -->
                         <div class="form-group">
                             <label>Comentario</label>
-                            <textarea id="comment" class="form-control"></textarea></label>
+                            <textarea id="comment" class="form-control" style="border: 1px solid #afafaf;"></textarea></label>
                         </div>
                         <button type="button" class="btn btn-info my-2" onclick="commentBox();">Enviar</button>
                     </form>
@@ -159,7 +162,9 @@
             </div>
         </div>
     </div>
-
+    </div>
+    
+    
     <footer class="section footer-classic context-dark pt-5">
         <div class="container wide">
 

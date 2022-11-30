@@ -104,17 +104,20 @@ div#redes-sociales {
     display: flex;
     justify-content: center;
 }
-
+/*
 div.container {
     margin: 0 10%;
 }
-
+*/
 div#banner {
     width: 100%;
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
 div#banner img {
     width: 100%;
+
 }
 
 div#post-banner {
@@ -128,6 +131,8 @@ aside {
     margin: 1rem 0;
     border-radius: 10px;
     text-align: center;
+    height: 100%;
+    padding: 1rem;
 }
 
 aside h2 {
@@ -228,4 +233,80 @@ input:focus {
 input#botondelete,
 input#botonsubmit {
     padding: .5rem;
+}
+
+
+
+
+
+
+/*CONTACTANOS*/
+#wrap{
+    background-image: url('fondofondo.jpg');
+    background-size: 100% 100%;
+    background-repeat:  no-reèat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-color: #555;
+    padding: 3rem 0;
+}
+
+#wrapinicio{
+    background-image: url('fondofondo.jpg');
+    background-size: 100% 100%;
+    background-repeat:  no-reèat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-color: #555;
+}
+
+#wraproducto{
+    background-image: url('fondofondo.jpg');
+    background-size: 100% 100%;
+    background-repeat:  no-reèat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-color: #555;
+}
+
+#myCarousel{
+    margin-left: calc(var(--bs-gutter-x) * -.5);;
+    margin-right: calc(var(--bs-gutter-x) * -.5);;
+}
+
+div#modal{
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    height: auto;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: absolute;
+    background: white;
+}
+
+.btn-pink{
+    background: hotpink;
+    border-radius: .375rem;
+    padding: 0.375rem 0.75rem;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.d-none{
+    display:  none;
+}
+
+div#formulario{
+    width: 40%;
+    background: hotpink;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+input,
+textarea{
+    border-radius: 5px;
+    border: .5px solid #555;
 }
